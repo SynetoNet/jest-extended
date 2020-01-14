@@ -20,7 +20,8 @@
     "test": "jest",
     "test:coverage": "yarn test -- --coverage",
     "test:report": "codecov",
-    "test:watch": "yarn test -- --watch"
+    "test:watch": "yarn test -- --watch",
+    "prepack": "npm run build"
   },
   "keywords": [
     "jest",
