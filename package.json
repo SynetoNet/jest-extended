@@ -21,7 +21,7 @@
     "test:coverage": "yarn test -- --coverage",
     "test:report": "codecov",
     "test:watch": "yarn test -- --watch",
-    "prepack": "npm run build"
+    "prepack": "npm install && npm run build"
   },
   "keywords": [
     "jest",
@@ -37,6 +37,7 @@
   "repository": "jest-community/jest-extended",
   "devDependencies": {
     "@types/jest": "^23.3.2",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.1",
     "babel-jest": "^23.0.1",
@@ -59,7 +60,6 @@
     "pretty-format": "^22.1.0"
   },
   "dependencies": {
-    "babel-cli": "^6.26.0",
     "expect": "^24.1.0",
     "jest-get-type": "^22.4.3",
     "jest-matcher-utils": "^22.0.0"
